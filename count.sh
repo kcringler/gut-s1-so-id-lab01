@@ -2,6 +2,9 @@
 
 # This script will count the number of unique ISO downloads from a server
 
+# Unzip the .tgz file containing the logs
+tar -xvzf cdlinux.tgz
+
 # combine both logs into one file
 cat cdlinux.www.log > both.log # concatenate cdlinux.www.log to both.log
 cat cdlinux.ftp.log >> both.log # concatenate and append cdlinux.ftp.log to both.log
